@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>北海道觀光</title>
+
+	<style type="text/css">
+		* { 
+			font-family: "標楷體"; }
+
+		header { 
+			font-size: 36px;
+			color: #000000; }
+        .col-lg-4 {
+	        border: 1px solid; }
+
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script>
+	$(document).ready(function(){
+		$("#sapporo").hover(function(){
+			$("#PICTURE").attr("src","sapporo.jpg");
+		});
+
+		$("#food").hover(function(){
+			$("#PICTURE").attr("src","sushi.jpg");
+		});
+
+		$("#festival").hover(function(){
+			$("#PICTURE").attr("src","snow.jpg");
+		});
+
+		$("#PICTURE").click(function(){
+			$("#PICTURE").hide();
+			$("#PICTURE").fadeIn("slow")
+		});
+	});
+</script>
+
+
+</head>
+<nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+	<a class="navbar-brand" href="#">MENU</a>
+				
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="#sapporo">札幌（SAPPORO）</a></li>
+			<li class="nav-item"><a class="nav-link" href="#sushi">美食</a></li>
+			<li class="nav-item"><a class="nav-link" href="#snow">SNOW FESTIVAL
+			</a></li>
+		</ul>
+	</div>
+</nav>
+
+<body>
+	<nav>
+		<ul>
+	        <li><a href="#sapporo">札幌（SAPPORO）</a></li>
+	        <li><a href="#sushi">美食</a></li>
+	        <li><a href="#snow">SNOW FESTIVAL</a></li>
+	    </ul>
+    </nav>
+
+   <main class="container-fluid bg-info text-white text-center">
+   
+    <nav>
+	    <h1><a href="hokkaido.jpg"
+             class="text-reset text-decoration-none text-white bg-info"target="_blank" id="CSIM"
+>北海道</h1>
+        <h2><a href="https://www.city.sapporo.jp/keizai/kanko/event/r4event-calender.html"
+        	 class="text-reset text-decoration-none text-white bg-info"target="_blank" id="event"
+>EVENT</a>
+        /   <a href="dai.jpg"
+             class="text-reset text-decoration-none text-white bg-info"target="_blank" id="CSIM"
+>地圖</a>
+    </h2>
+    </nav>
+
+       <img src="snow.jpg" alt="照片"  width="850" height="500" target="_blank" id="PICTURE"
+>
+    <br><br><br>
+<div class="row">
+    <session id="sapporo" class="col-lg-4">
+	    <header><a href="https://www.sapporo.travel/zh-tw/spot/feature/recommendations-for-winter-sightseeing-in-sapporo/"
+             class="text-reset text-decoration-none text-white bg-info"target="_blank" id="CSIM">札幌（SAPPORO）</header>
+	    
+	    <img src="sapporo.jpg" width="200" height="200" alt="照片"  target="_blank" id="ki">
+
+	    <h3>人口：1,952,000</h3>
+  
+    </session>
+
+    <article id="sushi" class="col-lg-4">
+        <header><a href="sushi.jpg" class=
+             "text-reset text-decoration-none text-white bg-info"target="_blank" id="CSIM">美食</header>
+             <iframe src="https://www.youtube.com/embed/K3JcAv9Ied0" allowfullscreen 
+		class="embed-responsive-item"></iframe>
+        <h3>TORITON:</h3>
+    </article>
+
+    <aside id="snow" class="col-lg-4">
+        <header><a href="https://www.snowfes.com/t/"
+             class="text-reset text-decoration-none text-white bg-info"target="_blank" id="CSIM">SNOWFESTIVAL</header>
+        <h3>毎年冬天举行的EVENT。</h3>
+        <h3>看雪雕以外，也可以買美食</h3>
+        <h3>按SNOWFESTIVAL就可以看</h3>
+        <h3>2022年(今年)中文版網頁</h3>
+
+
+        
+    </aside>
+    </div><br><br>
+
+    <footer>
+    Copyright © 芦田紗羽. All Rights Reserved.
+    </footer>
+
+  </main>
+
+</body>
+</html>
